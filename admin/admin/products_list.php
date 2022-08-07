@@ -57,7 +57,7 @@ include "topheader.php";
                     <tbody>
                       <?php 
 
-                        $result=mysqli_query($con,"select product_id,product_image, product_title,product_price from products  where  product_cat=2 or product_cat=3 or product_cat=4 Limit $page1,12")or die ("query 1 incorrect.....");
+                        $result=mysqli_query($con,"select product_id,product_image, product_title,product_price from products Limit $page1,12")or die ("query 1 incorrect.....");
 
                         while(list($product_id,$image,$product_name,$price)=mysqli_fetch_array($result))
                         {
@@ -94,7 +94,7 @@ include "topheader.php";
                 for($b=1; $b<=$a;$b++)
                 {
                 ?> 
-                <li class="page-item"><a class="page-link" href="productlist.php?page=<?php echo $b;?>"><?php echo $b." ";?></a></li>
+                <li class="page-item"><a class="page-link" href="products_list.php?page=<?php echo $b;?>"><?php echo $b." ";?></a></li>
                 <?php	
 }
 ?>

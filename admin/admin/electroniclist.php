@@ -103,7 +103,7 @@ include "topheader.php";
                 for($b=1; $b<=$a;$b++)
                 {
                 ?> 
-                <li class="page-item"><a class="page-link" href="productlist.php?page=<?php echo $b;?>"><?php echo $b." ";?></a></li>
+                <li class="page-item"><a class="page-link" href="products_list.php?page=<?php echo $b;?>"><?php echo $b." ";?></a></li>
                 <?php	
 }
 ?>
