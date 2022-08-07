@@ -118,57 +118,6 @@ session_start();
 	<body>
 		<!-- HEADER -->
 		<header>
-			<!-- TOP HEADER -->
-			<div id="top-header">
-				<div class="container">
-					<ul class="header-links pull-left">
-						<li><a href="#"><i class="fa fa-phone"></i> +91-9535688928</a></li>
-						<li><a href="#"><i class="fa fa-envelope-o"></i> puneethreddy951@gmail.com</a></li>
-						<li><a href="#"><i class="fa fa-map-marker"></i>Bangalore</a></li>
-					</ul>
-					<ul class="header-links pull-right">
-						<li><a href="#"><i class="fa fa-inr"></i> INR</a></li>
-						<li><?php
-                             include "db.php";
-                            if(isset($_SESSION["uid"])){
-                                $sql = "SELECT first_name FROM user_info WHERE user_id='$_SESSION[uid]'";
-                                $query = mysqli_query($con,$sql);
-                                $row=mysqli_fetch_array($query);
-                                
-                                echo '
-                               <div class="dropdownn">
-                                  <a href="#" class="dropdownn" data-toggle="modal" data-target="#myModal" ><i class="fa fa-user-o"></i> HI '.$row["first_name"].'</a>
-                                  <div class="dropdownn-content">
-                                    <a href="" data-toggle="modal" data-target="#profile"><i class="fa fa-user-circle" aria-hidden="true" ></i>My Profile</a>
-                                    <a href="logout.php"  ><i class="fa fa-sign-in" aria-hidden="true"></i>Log out</a>
-                                    
-                                  </div>
-                                </div>';
-
-                            }else{ 
-                                echo '
-                                <div class="dropdownn">
-                                  <a href="#" class="dropdownn" data-toggle="modal" data-target="#myModal" ><i class="fa fa-user-o"></i> My Account</a>
-								  <div class="dropdownn-content">
-								  	<a href="admin/login.php" ><i class="fa fa-user" aria-hidden="true" ></i>Admin</a>
-                                    <a href="" data-toggle="modal" data-target="#Modal_login"><i class="fa fa-sign-in" aria-hidden="true" ></i>Login</a>
-                                    <a href="" data-toggle="modal" data-target="#Modal_register"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a>
-                                    
-                                  </div>
-                                </div>';
-                                
-                            }
-                                             ?>
-                               
-                                </li>				
-					</ul>
-					
-				</div>
-			</div>
-			<!-- /TOP HEADER -->
-			
-			
-
 			<!-- MAIN HEADER -->
 			<div id="header">
 				<!-- container -->
