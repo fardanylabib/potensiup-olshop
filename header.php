@@ -136,52 +136,6 @@ session_start();
 							</div>
 						</div>
 						<!-- /LOGO -->
-						<!-- ACCOUNT -->
-						<div class="col-md-3 clearfix">
-							<div class="header-ctn">
-								<!-- Wishlist -->
-								<div>
-									<a href="https://github.com/puneethreddyhc">
-										<i class="fa fa-github"></i>
-										<span>Github</span>
-										
-									</a>
-								</div>
-								<!-- /Wishlist -->
-
-								<!-- Cart -->
-								<div class="dropdown">
-									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-										<i class="fa fa-shopping-cart"></i>
-										<span>Your Cart</span>
-										<div class="badge qty">0</div>
-									</a>
-									<div class="cart-dropdown"  >
-										<div class="cart-list" id="cart_product">
-										
-											
-										</div>
-										
-										<div class="cart-btns">
-												<a href="cart.php" style="width:100%;"><i class="fa fa-edit"></i>  edit cart</a>
-											
-										</div>
-									</div>
-										
-									</div>
-								<!-- /Cart -->
-
-								<!-- Menu Toogle -->
-								<div class="menu-toggle">
-									<a href="#">
-										<i class="fa fa-bars"></i>
-										<span>Menu</span>
-									</a>
-								</div>
-								<!-- /Menu Toogle -->
-							</div>
-						</div>
-						<!-- /ACCOUNT -->
 					</div>
 					<!-- row -->
 				</div>
