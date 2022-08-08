@@ -2078,6 +2078,7 @@ background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, 
 #footer {
   background: #15161D;
   color: #B9BABC;
+  margin-top: 30px;
 }
 
 #bottom-footer {
